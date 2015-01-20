@@ -1,0 +1,28 @@
+button {
+	display: inline-block;
+	background: #c0392b;
+	color: white;
+	border-style: none;
+	border-radius: 5px;
+	margin: 20px;
+}
+
+p, h1 {
+	margin: 20px;
+	padding: 20px;
+}
+
+li {
+	margin: 10px;
+	padding: 10px;
+}
+
+.buttonsTop {
+	text-align: center;
+	margin: 10px 50px 10px 50px;
+}
+
+.default {
+	background: #999;
+	border-radius: 3px;
+}

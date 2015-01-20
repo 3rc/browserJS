@@ -1,0 +1,12 @@
+.container {
+	width: 80%;
+	margin: 0 100px 0 100px;
+}
+
+ul {
+	list-style: none;
+}
+
+.hover {
+	background: pink;
+}
