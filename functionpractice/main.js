@@ -97,14 +97,12 @@ tiny(-5)
     ----------------------------------------------
 
 
-*/
+
 
 var getSeconds = function(t) {
 	var n = t.split(":");
-	var s1 = n[0] * 60;
-	var s2 = n[1];
-	var s = s1 += s2;
-	console.log(s)
+	var s = n[0] * 60 + n[1] * 1;
+	console.log(s);
 }
 
 
@@ -112,7 +110,7 @@ getSeconds('01:30');
 getSeconds('10:25')
 
 
-
+*/
 
 
 
