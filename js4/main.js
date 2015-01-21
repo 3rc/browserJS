@@ -1,26 +1,33 @@
 $(document).on('ready', function() {
-  
-  	var numVictims = prompt("Enter the number of disaster victims:");
-  	var vicName = [];
-  	var vicPhone = [];
-  	var vicAddress = [];
 
-	for(i = 0; i < numVictims; i++) {
-		vicName.push(prompt("Victim's name?"));
-		vicPhone.push(prompt("Victim's phone number?"));
-		vicAddress.push(prompt("Victim's address?"))
-	}
 
-	var numVolunteers = prompt("Enter the number of volunteers:");
+	var vicName = [];
+	var vicPhone = [];
+	var vicAddress = [];
+	var victims = [vicName, vicPhone, vicAddress];
+	var i = 0;
+  	var disaster = confirm("Enter Disaster Victim information?");
+  	while(disaster == true) {
+  		var i = i + 1;
+		vicName.push(" " + prompt("Victim's name?"));
+		vicPhone.push(" " + prompt("Victim's phone number?"));
+		vicAddress.push(" " + prompt("Victim's address?"));
+		var disaster = confirm("Enter another victim's information?");
+  }
+
 	var volName = [];
 	var volPhone = [];
 	var volAddress = [];
-
-	for(i = 0; i <numVolunteers; i++) {
-		volName.push(prompt("Volunteer's name?"));
-		volPhone.push(prompt("Volunteer's phone number?"));
-		volAddress.push(prompt("Volunteer's address?"));
+	var volunteers = [volName, volPhone, volAddress];
+	var i = 0;
+  	var disaster = confirm("Enter Disaster Volunteer information?");
+  	while(disaster == true) {
+  		var i = i + 1;
+		volName.push(" " + prompt("Volunteer's name?"));
+		volPhone.push(" " + prompt("Volunteer's phone number?"));
+		volAddress.push(" " + prompt("Volunteer's address?"));
+		var disaster = confirm("Enter another volunteer's information?");
 	}
 
-	alert("Number of victims: " + numVictims + "\nNumber of volunteers: " + numVolunteers + "\nVictims:\n" + vicName + "\nVolunteers:\n" + volName)
+	alert("Victims' names: " + vicName)
 });
