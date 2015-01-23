@@ -5,22 +5,30 @@ $(document).on('ready', function() {
 	});
 
 	$(".editable").click(function() {
-		var textEditable = "<div class='form edit-inplace'>" +
+		var textEditable = "<form class='edit-inplace'>" +
 		"<textarea class='edit-textarea'>" + $(this).text().trim() +
 		"</textarea>" + "<ul class='edit-inplace-options'><li>" +
-		"<a class='edit-save btnSubmit'>Save</a></li><li>" +
-		"<a class='edit-cancel'>Cancel</a></li></ul></div>";
+		"<a class='edit-save'>Save</a></li><li>" +
+		"<a class='edit-cancel'>Cancel</a></li></ul></form>";
 
-		$(this).hide().after(textEditable);
+		var textEditableElement = $(textEditable);
+		var textToEdit = (this)
+		
+
+		$(this).hide().after(textEditableElement);
 		$(".edit-textarea").focus();
-	});
-		$("edit-save").click(function() {
-			$(this).val(textEditable.text)
-		})
 
 		$(".edit-cancel").click(function() {
-			$(textEditable).remove();
-			$(".editable").focus()
-			});
-  
+			textEditableElement.remove();
+			$(".editable").show()
+		});	
+
+		$(".edit-save").click(function() {
+			var textEdited = ($(".edit-textarea").val());
+			$(textToEdit).text(textEdited);
+			textEditableElement.remove();
+			$(".editable").show()
+		});
+
+  	});
 });

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="editForm hidden">
+		<form>
+			<div class="formEntry">
+				<label>Name: </label>
+				<input type="text" class="name">
+			</div>
+			<div class="formEntry">
+				<label>Bio: </label>
+				<input type="text" class="bio">
+			</div>
+			<div class="formEntry">
+				<label>Favorite Books: </label>
+				<input type="text" class="books">
+			</div>
+			<div class="formEntry">
+				<label>Favorite JS Libraries: </label>
+				<input type="text" class="libraries">
+			</div>
+		</form>
+		<button class="btnSubmit">Update Profile!</button>
+	</div>
+
+	<div class="profile">
+	<h1>User Profile</h1>
+	<h2>Name:</h2>
+	<p class="profileName"></p>
+	<h2>Bio:</h2>
+	<p class="profileBio"></p>
+	<h2>Favorite Books:</h2>
+	<p class="profileBooks"></p>
+	<h2>Favorite JS Libraries:</h2>
+	<p class="profileLibraries"></p>
+	<button class="btnEdit">Click here to edit your profile</button>
+	</div>
+
+	</div>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
