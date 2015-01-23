@@ -17,12 +17,58 @@ form {
 
 }
 
-.box {
+.editable {
 	border: 1px solid blue;
 	margin: 10px;
 	padding: 10px;
+	cursor: pointer;
 }
 
-.editHover {
+.editableHover {
 	background: peachpuff;
 }
+
+.editable {
+}
+
+.edit-inplace {
+	position:relative;
+}
+
+.edit-inplace-options {
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+	background: #FFF;
+
+}
+
+.edit-inplace-options li {
+	float: left;
+}
+
+.edit-save, .edit-cancel {
+	cursor: pointer;
+	padding: 4px;
+	display: block;
+	float: left;
+	border: solid 1px;
+}
+
+
+.edit-save {
+	border-right: solid 1px #000;
+}
+
+.edit-cancel {
+	border-left: solid 1px #000;
+}
+
+.edit-textarea {
+	width: 90%;
+	padding: 2px;
+}
+
+
+
+
